@@ -1,11 +1,16 @@
-function App() {
+import Footer from "./Footer";
+import Header from "./Header";
+import HeroSection from "./HeroSection";
+import TaskBoard from "./task/TaskBoard";
+export default function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-      <h1 className="text-white text-5xl font-extrabold">
-        Tailwind CSS v4.1 + Vite
-      </h1>
-    </div>
+    <>
+      <Header></Header>
+      <div className="flex flex-col justify-center items-center">
+        <HeroSection></HeroSection>
+        <TaskBoard></TaskBoard>
+      </div>
+      <Footer></Footer>
+    </>
   );
 }
-
-export default App;
